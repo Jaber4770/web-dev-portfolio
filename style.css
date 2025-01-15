@@ -1,18 +1,105 @@
-h4::before{
-    content: "assignment ";
-}
-h4::after{
-    content: "assignment";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
-::selection{
-    background-color: yellow;
+body {
+    font-family: "Open Sans", serif;
 }
 
-h4::first-letter{
-    font-size: 40px;
+header {
+    background-image: url(images/developer.png), url(images/header_bg.png);
+    background-position: left, bottom right;
+    background-repeat: no-repeat;
+    background-color: #FFF8F3;
+    margin-bottom: 50px;
 }
-p::first-line{
-    background: tomato;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 226px 0 226px;
+}
+
+nav h1 span {
+    color: #FD6E0A;
+    ;
+}
+
+nav h1 {
+    font-size: 45px;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    color: #474747;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.common-btn {
+    background-color: #FD6E0A;
     color: white;
+    border-radius: 5px;
+    padding: 20px 35px;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 57px 0 200px;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.banner-info h2 {
+    color: #474747;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-info h1 {
+    font-size: 85px;
+    font-weight: 700;
+    color: #181818;
+}
+
+.banner-info p {
+    color: #757575;
+    font-size: 18px;
+    width: 80%;
+
+}
+
+.btn-group {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.common-btn-phone {
+    background-color: white;
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+}
+
+.banner-img img{
+    vertical-align: bottom;
 }
